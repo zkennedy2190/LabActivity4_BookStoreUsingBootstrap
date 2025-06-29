@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,63 +13,82 @@
       background-size: cover;
       color: #fff;
     }
+
     .card {
       background-color: rgba(255, 255, 255, 0.9);
     }
+
     .hero {
       background: rgba(0, 0, 0, 0.6);
       padding: 3rem 1rem;
       border-radius: 1rem;
       text-align: center;
     }
+
     footer {
       background-color: rgba(0, 0, 0, 0.8);
       color: #ccc;
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <!-- Add your code here -->
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-book-fill"></i> My Bookstore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#bookList">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map">Location</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offset space for navbar -->
+  <div style="height: 80px;"></div>
+
+  <div class="container py-5">
+    <div class="hero mb-5">
       <!-- Add your code here -->
     </div>
-  </div>
-</nav>
 
-<!-- Offset space for navbar -->
-<div style="height: 80px;"></div>
+    <div class="row" id="bookList">
+      <!-- Cards will be inserted here dynamically -->
+    </div>
 
-<div class="container py-5">
-  <div class="hero mb-5">
-    <!-- Add your code here -->
-  </div>
+    <div class="mt-5 p-4 bg-dark rounded" id="cart">
+      <!-- Add your card here -->
+    </div>
 
-  <div class="row" id="bookList">
-    <!-- Cards will be inserted here dynamically -->
-  </div>
-
-  <div class="mt-5 p-4 bg-dark rounded" id="cart">
-    <!-- Add your card here -->
-  </div>
-
-  <div class="mt-5" id="map">
-     <!-- add your code here -->
-    <div class="ratio ratio-16x9 rounded">
-      <!-- Add your code here -->
+    <div class="mt-5" id="map">
+      <!-- add your code here -->
+      <div class="ratio ratio-16x9 rounded">
+        <!-- Add your code here -->
+      </div>
     </div>
   </div>
-</div>
 
-<footer class="text-center mt-5 py-4">
-  <div class="container">
-<!-- add your code here! -->
-  </div>
-</footer>
+  <footer class="text-center mt-5 py-4">
+    <div class="container">
+      <!-- add your code here! -->
+    </div>
+  </footer>
 
-<script>
-  // Add your code here! 
-</script>
+  <script>
+    // Add your code here! 
+  </script>
 </body>
+
 </html>
